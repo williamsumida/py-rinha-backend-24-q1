@@ -2,7 +2,6 @@ services:
   api1: &api
     build: 
       context: .
-      target: prod
     container_name: api1
     ports:
       - 3001:3000
