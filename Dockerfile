@@ -3,8 +3,7 @@ FROM python:3
 WORKDIR /app
 
 COPY requirements.txt /app
-COPY data /app
 RUN pip install -r requirements.txt
-ADD main.py /app
+ADD src /app/src
 
 CMD ["python", "-u", "main.py"]
